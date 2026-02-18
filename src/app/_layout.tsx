@@ -4,6 +4,7 @@ import { Stack } from "expo-router";
 import "../../global.css";
 
 import * as Sentry from "@sentry/react-native";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 Sentry.init({
   dsn: "https://4cbf0be15075fc50561c2e10fa33fc85@o4509813037137920.ingest.de.sentry.io/4510905593823312",
@@ -27,10 +28,12 @@ Sentry.init({
 export default function RootLayout() {
   return (
     <ClerkProvider tokenCache={tokenCache}>
-      <Stack screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="(auth)" />
-        <Stack.Screen name="(tabs)" />
-      </Stack>
+      <GestureHandlerRootView className="flex-1">
+        <Stack screenOptions={{ headerShown: false }}>
+          <Stack.Screen name="(auth)" />
+          <Stack.Screen name="(tabs)" />
+        </Stack>
+      </GestureHandlerRootView>
     </ClerkProvider>
   );
 }
