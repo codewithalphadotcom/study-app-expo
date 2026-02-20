@@ -1,4 +1,5 @@
 import { Dimensions } from "react-native";
+import { DeepPartial, Theme } from "stream-chat-expo";
 // import type { DeepPartial, Theme } from "stream-chat-expo";
 
 const { width } = Dimensions.get("window");
@@ -37,429 +38,429 @@ export const COLORS = {
   accentSecondary: "#00B894",
 };
 
-// export const studyBuddyTheme: DeepPartial<Theme> = {
-//   colors: {
-//     targetedMessageBackground: "transparent",
-//     grey_dark: colors.text,
-//     accent_blue: colors.primary,
-//     white: colors.text,
-//     black: colors.background,
-//   },
-//   audioAttachment: {
-//     container: {
-//       backgroundColor: colors.surfaceDark,
-//       borderRadius: 12,
-//       paddingHorizontal: 12,
-//       paddingVertical: 8,
-//       width: 300,
-//       overflow: "hidden",
-//     },
-//     leftContainer: {
-//       marginRight: 8,
-//     },
-//     playPauseButton: {
-//       backgroundColor: colors.primary,
-//       borderRadius: 20,
-//     },
-//     progressControlContainer: {
-//       flex: 1,
-//     },
-//     progressDurationText: {
-//       color: colors.textMuted,
-//       fontSize: 12,
-//     },
-//     rightContainer: {
-//       marginLeft: 8,
-//     },
-//     speedChangeButton: {
-//       backgroundColor: colors.surface,
-//       borderRadius: 4,
-//       paddingHorizontal: 6,
-//       paddingVertical: 2,
-//     },
-//     speedChangeButtonText: {
-//       color: colors.text,
-//       fontSize: 12,
-//     },
-//   },
-//   imageGallery: {
-//     backgroundColor: colors.background,
-//     slide: {
-//       backgroundColor: colors.background,
-//     },
-//     grid: {
-//       contentContainer: {
-//         backgroundColor: colors.background,
-//       },
-//       handle: {
-//         backgroundColor: colors.background,
-//       },
-//       handleText: {
-//         color: colors.textMuted,
-//       },
-//     },
-//     header: {
-//       container: {
-//         backgroundColor: colors.surface,
-//       },
-//       usernameText: {
-//         color: colors.text,
-//       },
-//       dateText: {
-//         color: colors.textMuted,
-//       },
-//     },
-//     footer: {
-//       container: {
-//         backgroundColor: colors.surface,
-//       },
-//       imageCountText: {
-//         color: colors.textMuted,
-//       },
-//     },
-//   },
-//   channelListMessenger: {
-//     flatList: {
-//       backgroundColor: colors.background,
-//     },
-//     flatListContent: {},
-//   },
-//   loadingIndicator: {
-//     container: {
-//       backgroundColor: colors.background,
-//     },
-//     loadingText: {
-//       color: colors.textMuted,
-//     },
-//   },
-//   channelListFooterLoadingIndicator: {
-//     container: {
-//       backgroundColor: colors.background,
-//     },
-//   },
-//   channelListLoadingIndicator: {
-//     container: {
-//       backgroundColor: colors.background,
-//     },
-//   },
-//   channelListSkeleton: {
-//     background: { backgroundColor: colors.surfaceLight },
-//     maskFillColor: colors.background,
-//   },
-//   channelPreview: {
-//     container: {
-//       backgroundColor: colors.background,
-//     },
-//     contentContainer: {
-//       backgroundColor: colors.background,
-//     },
-//     title: {
-//       color: colors.text,
-//       fontSize: 16,
-//       fontWeight: "600",
-//     },
-//     unreadContainer: {
-//       backgroundColor: colors.primary,
-//     },
-//   },
-//   messageList: {
-//     scrollToBottomButton: {
-//       chevronColor: colors.text,
-//       container: {
-//         backgroundColor: colors.surface,
-//         borderColor: colors.border,
-//       },
-//     },
-//     container: {
-//       backgroundColor: colors.surfaceLight,
-//     },
-//     contentContainer: {
-//       backgroundColor: colors.surfaceLight,
-//     },
+export const studyBuddyTheme: DeepPartial<Theme> = {
+  colors: {
+    targetedMessageBackground: "transparent",
+    grey_dark: COLORS.text,
+    accent_blue: COLORS.primary,
+    white: COLORS.text,
+    black: COLORS.background,
+  },
+  audioAttachment: {
+    container: {
+      backgroundColor: COLORS.surfaceDark,
+      borderRadius: 12,
+      paddingHorizontal: 12,
+      paddingVertical: 8,
+      width: 300,
+      overflow: "hidden",
+    },
+    leftContainer: {
+      marginRight: 8,
+    },
+    playPauseButton: {
+      backgroundColor: COLORS.primary,
+      borderRadius: 20,
+    },
+    progressControlContainer: {
+      flex: 1,
+    },
+    progressDurationText: {
+      color: COLORS.textMuted,
+      fontSize: 12,
+    },
+    rightContainer: {
+      marginLeft: 8,
+    },
+    speedChangeButton: {
+      backgroundColor: COLORS.surface,
+      borderRadius: 4,
+      paddingHorizontal: 6,
+      paddingVertical: 2,
+    },
+    speedChangeButtonText: {
+      color: COLORS.text,
+      fontSize: 12,
+    },
+  },
+  imageGallery: {
+    backgroundColor: COLORS.background,
+    slide: {
+      backgroundColor: COLORS.background,
+    },
+    grid: {
+      contentContainer: {
+        backgroundColor: COLORS.background,
+      },
+      handle: {
+        backgroundColor: COLORS.background,
+      },
+      handleText: {
+        color: COLORS.textMuted,
+      },
+    },
+    header: {
+      container: {
+        backgroundColor: COLORS.surface,
+      },
+      usernameText: {
+        color: COLORS.text,
+      },
+      dateText: {
+        color: COLORS.textMuted,
+      },
+    },
+    footer: {
+      container: {
+        backgroundColor: COLORS.surface,
+      },
+      imageCountText: {
+        color: COLORS.textMuted,
+      },
+    },
+  },
+  channelListMessenger: {
+    flatList: {
+      backgroundColor: COLORS.background,
+    },
+    flatListContent: {},
+  },
+  loadingIndicator: {
+    container: {
+      backgroundColor: COLORS.background,
+    },
+    loadingText: {
+      color: COLORS.textMuted,
+    },
+  },
+  channelListFooterLoadingIndicator: {
+    container: {
+      backgroundColor: COLORS.background,
+    },
+  },
+  channelListLoadingIndicator: {
+    container: {
+      backgroundColor: COLORS.background,
+    },
+  },
+  channelListSkeleton: {
+    background: { backgroundColor: COLORS.surfaceLight },
+    maskFillColor: COLORS.background,
+  },
+  channelPreview: {
+    container: {
+      backgroundColor: COLORS.background,
+    },
+    contentContainer: {
+      backgroundColor: COLORS.background,
+    },
+    title: {
+      color: COLORS.text,
+      fontSize: 16,
+      fontWeight: "600",
+    },
+    unreadContainer: {
+      backgroundColor: COLORS.primary,
+    },
+  },
+  messageList: {
+    scrollToBottomButton: {
+      chevronColor: COLORS.text,
+      container: {
+        backgroundColor: COLORS.surface,
+        borderColor: COLORS.border,
+      },
+    },
+    container: {
+      backgroundColor: COLORS.surfaceLight,
+    },
+    contentContainer: {
+      backgroundColor: COLORS.surfaceLight,
+    },
 
-//     inlineUnreadIndicator: {
-//       container: {
-//         backgroundColor: colors.primary,
-//       },
-//       text: {
-//         color: colors.text,
-//       },
-//     },
-//     listContainer: {
-//       backgroundColor: colors.surfaceLight,
-//     },
-//   },
+    inlineUnreadIndicator: {
+      container: {
+        backgroundColor: COLORS.primary,
+      },
+      text: {
+        color: COLORS.text,
+      },
+    },
+    listContainer: {
+      backgroundColor: COLORS.surfaceLight,
+    },
+  },
 
-//   messageInput: {
-//     container: {
-//       backgroundColor: colors.surface,
-//       borderTopColor: colors.border,
-//       borderTopWidth: 1,
-//       paddingVertical: 8,
-//       paddingHorizontal: 12,
-//     },
-//     inputBox: {
-//       color: colors.text,
-//       backgroundColor: colors.surfaceDark,
-//       borderRadius: 8,
-//       paddingHorizontal: 12,
-//     },
-//     inputBoxContainer: {
-//       backgroundColor: colors.surfaceDark,
-//       borderRadius: 8,
-//       borderWidth: 0,
-//     },
-//     autoCompleteInputContainer: {
-//       backgroundColor: colors.surface,
-//     },
-//     suggestionsListContainer: {
-//       container: {
-//         backgroundColor: colors.surface,
-//       },
-//     },
-//     audioRecorder: {
-//       micIcon: {
-//         pathFill: colors.primary,
-//       },
-//       checkContainer: {
-//         backgroundColor: colors.primary,
-//       },
-//       deleteContainer: {
-//         backgroundColor: colors.danger,
-//       },
-//       deleteIcon: {
-//         pathFill: colors.text,
-//       },
-//       slideToCancelContainer: {
-//         backgroundColor: colors.surface,
-//       },
-//     },
-//     audioRecordingInProgress: {
-//       container: {
-//         backgroundColor: colors.surface,
-//       },
-//       durationText: {
-//         color: colors.text,
-//       },
-//     },
-//     audioRecordingLockIndicator: {
-//       container: {
-//         backgroundColor: colors.surface,
-//       },
-//       lockIcon: {
-//         pathFill: colors.primary,
-//       },
-//       arrowUpIcon: {
-//         pathFill: colors.textMuted,
-//       },
-//     },
-//     audioRecordingPreview: {
-//       container: {
-//         backgroundColor: colors.surface,
-//       },
-//       currentTime: {
-//         color: colors.text,
-//       },
-//       progressBar: {
-//         backgroundColor: colors.primary,
-//       },
-//     },
-//     audioRecordingWaveform: {
-//       container: {
-//         backgroundColor: colors.surface,
-//       },
-//       waveform: {
-//         backgroundColor: colors.primary,
-//       },
-//     },
-//   },
-//   messageSimple: {
-//     avatarWrapper: {
-//       container: {
-//         marginRight: 8,
-//       },
-//     },
-//     file: {
-//       container: {
-//         backgroundColor: colors.surfaceDark,
-//         borderColor: colors.border,
-//       },
-//       fileSize: { color: colors.textMuted },
-//       title: { color: colors.text, fontWeight: "normal" },
-//     },
-//     pinnedHeader: { container: { display: "none" } },
-//     content: {
-//       textContainer: {
-//         maxWidth: vw(80),
-//         paddingHorizontal: 12,
-//       },
-//       replyBorder: {
-//         borderColor: colors.primary,
-//       },
-//       containerInner: {
-//         backgroundColor: colors.incomingBubble,
-//         borderColor: colors.incomingBubble,
-//         borderRadius: 8,
-//       },
-//       deletedMetaText: {
-//         display: "none",
-//       },
-//       deletedContainerInner: {
-//         backgroundColor: colors.surfaceDark,
-//         borderColor: colors.surfaceDark,
-//       },
-//       deletedText: {
-//         text: {
-//           color: colors.textMuted,
-//         },
-//       },
-//       markdown: {
-//         em: {
-//           color: colors.textMuted,
-//         },
-//         text: {
-//           color: colors.text,
-//         },
-//       },
-//       metaContainer: {
-//         backgroundColor: "transparent",
-//       },
-//       metaText: {
-//         color: colors.textSubtle,
-//       },
-//     },
+  messageInput: {
+    container: {
+      backgroundColor: COLORS.surface,
+      borderTopColor: COLORS.border,
+      borderTopWidth: 1,
+      paddingVertical: 8,
+      paddingHorizontal: 12,
+    },
+    inputBox: {
+      color: COLORS.text,
+      backgroundColor: COLORS.surfaceDark,
+      borderRadius: 8,
+      paddingHorizontal: 12,
+    },
+    inputBoxContainer: {
+      backgroundColor: COLORS.surfaceDark,
+      borderRadius: 8,
+      borderWidth: 0,
+    },
+    autoCompleteInputContainer: {
+      backgroundColor: COLORS.surface,
+    },
+    suggestionsListContainer: {
+      container: {
+        backgroundColor: COLORS.surface,
+      },
+    },
+    audioRecorder: {
+      micIcon: {
+        pathFill: COLORS.primary,
+      },
+      checkContainer: {
+        backgroundColor: COLORS.primary,
+      },
+      deleteContainer: {
+        backgroundColor: COLORS.danger,
+      },
+      deleteIcon: {
+        pathFill: COLORS.text,
+      },
+      slideToCancelContainer: {
+        backgroundColor: COLORS.surface,
+      },
+    },
+    audioRecordingInProgress: {
+      container: {
+        backgroundColor: COLORS.surface,
+      },
+      durationText: {
+        color: COLORS.text,
+      },
+    },
+    audioRecordingLockIndicator: {
+      container: {
+        backgroundColor: COLORS.surface,
+      },
+      lockIcon: {
+        pathFill: COLORS.primary,
+      },
+      arrowUpIcon: {
+        pathFill: COLORS.textMuted,
+      },
+    },
+    audioRecordingPreview: {
+      container: {
+        backgroundColor: COLORS.surface,
+      },
+      currentTime: {
+        color: COLORS.text,
+      },
+      progressBar: {
+        backgroundColor: COLORS.primary,
+      },
+    },
+    audioRecordingWaveform: {
+      container: {
+        backgroundColor: COLORS.surface,
+      },
+      waveform: {
+        backgroundColor: COLORS.primary,
+      },
+    },
+  },
+  messageSimple: {
+    avatarWrapper: {
+      container: {
+        marginRight: 8,
+      },
+    },
+    file: {
+      container: {
+        backgroundColor: COLORS.surfaceDark,
+        borderColor: COLORS.border,
+      },
+      fileSize: { color: COLORS.textMuted },
+      title: { color: COLORS.text, fontWeight: "normal" },
+    },
+    pinnedHeader: { container: { display: "none" } },
+    content: {
+      textContainer: {
+        maxWidth: vw(80),
+        paddingHorizontal: 12,
+      },
+      replyBorder: {
+        borderColor: COLORS.primary,
+      },
+      containerInner: {
+        backgroundColor: COLORS.incomingBubble,
+        borderColor: COLORS.incomingBubble,
+        borderRadius: 8,
+      },
+      deletedMetaText: {
+        display: "none",
+      },
+      deletedContainerInner: {
+        backgroundColor: COLORS.surfaceDark,
+        borderColor: COLORS.surfaceDark,
+      },
+      deletedText: {
+        text: {
+          color: COLORS.textMuted,
+        },
+      },
+      markdown: {
+        em: {
+          color: COLORS.textMuted,
+        },
+        text: {
+          color: COLORS.text,
+        },
+      },
+      metaContainer: {
+        backgroundColor: "transparent",
+      },
+      metaText: {
+        color: COLORS.textSubtle,
+      },
+    },
 
-//     giphy: {
-//       container: {
-//         margin: 4,
-//         borderRadius: 8,
-//       },
-//     },
-//     card: {
-//       container: {
-//         width: vw(80),
-//         backgroundColor: colors.surface,
-//         borderColor: colors.border,
-//       },
-//       authorNameContainer: {
-//         display: "none",
-//       },
-//       cover: {
-//         marginHorizontal: 0,
-//         borderRadius: 8,
-//         borderBottomLeftRadius: 0,
-//         borderBottomRightRadius: 0,
-//       },
-//       footer: {
-//         backgroundColor: colors.surfaceDark,
-//         borderBottomLeftRadius: 8,
-//         borderBottomRightRadius: 8,
-//         padding: 12,
-//         title: {
-//           marginHorizontal: 4,
-//           marginBottom: 4,
-//           color: colors.text,
-//         },
-//         description: {
-//           marginHorizontal: 4,
-//           color: colors.textMuted,
-//         },
-//       },
-//     },
-//     replies: {
-//       container: {
-//         backgroundColor: colors.surface,
-//         borderRadius: 8,
-//       },
-//       leftCurve: {
-//         borderColor: colors.primary,
-//       },
-//       messageRepliesText: {
-//         padding: 4,
-//         color: colors.primary,
-//       },
-//       rightCurve: {
-//         borderColor: colors.primary,
-//       },
-//     },
-//     status: {
-//       timeIcon: {
-//         pathFill: colors.textSubtle,
-//       },
-//       readByCount: {
-//         color: colors.textSubtle,
-//       },
-//       checkAllIcon: {
-//         pathFill: colors.primary,
-//       },
-//       checkIcon: {
-//         pathFill: colors.textSubtle,
-//       },
-//     },
-//   },
-//   thread: {
-//     newThread: {
-//       backgroundGradientStart: colors.surfaceLight,
-//       backgroundGradientStop: colors.surfaceLight,
-//       text: {
-//         color: colors.textMuted,
-//       },
-//     },
-//   },
-//   reply: {
-//     container: {
-//       backgroundColor: colors.surfaceDark,
-//       borderColor: colors.border,
-//     },
-//     textContainer: {
-//       backgroundColor: colors.surfaceDark,
-//     },
-//     markdownStyles: {
-//       text: {
-//         color: colors.textMuted,
-//       },
-//     },
-//   },
-//   typingIndicator: {
-//     container: {
-//       backgroundColor: colors.surfaceLight,
-//     },
-//     text: {
-//       color: colors.textMuted,
-//     },
-//   },
-//   poll: {
-//     button: {
-//       text: {
-//         color: colors.primary,
-//       },
-//     },
-//     message: {
-//       container: {
-//         backgroundColor: colors.incomingBubble,
-//         borderRadius: 8,
-//       },
-//       header: {
-//         title: {
-//           color: colors.primary,
-//         },
-//         subtitle: {
-//           color: colors.textMuted,
-//         },
-//       },
-//       option: {
-//         text: {
-//           color: colors.text,
-//         },
-//         progressBar: {
-//           backgroundColor: colors.border,
-//         },
-//         progressBarEmptyFill: colors.border,
-//         progressBarVotedFill: colors.primary,
-//         progressBarWinnerFill: colors.primaryLight,
-//         voteButtonActive: colors.primary,
-//         voteButtonInactive: colors.textMuted,
-//       },
-//     },
-//   },
-// };
+    giphy: {
+      container: {
+        margin: 4,
+        borderRadius: 8,
+      },
+    },
+    card: {
+      container: {
+        width: vw(80),
+        backgroundColor: COLORS.surface,
+        borderColor: COLORS.border,
+      },
+      authorNameContainer: {
+        display: "none",
+      },
+      cover: {
+        marginHorizontal: 0,
+        borderRadius: 8,
+        borderBottomLeftRadius: 0,
+        borderBottomRightRadius: 0,
+      },
+      footer: {
+        backgroundColor: COLORS.surfaceDark,
+        borderBottomLeftRadius: 8,
+        borderBottomRightRadius: 8,
+        padding: 12,
+        title: {
+          marginHorizontal: 4,
+          marginBottom: 4,
+          color: COLORS.text,
+        },
+        description: {
+          marginHorizontal: 4,
+          color: COLORS.textMuted,
+        },
+      },
+    },
+    replies: {
+      container: {
+        backgroundColor: COLORS.surface,
+        borderRadius: 8,
+      },
+      leftCurve: {
+        borderColor: COLORS.primary,
+      },
+      messageRepliesText: {
+        padding: 4,
+        color: COLORS.primary,
+      },
+      rightCurve: {
+        borderColor: COLORS.primary,
+      },
+    },
+    status: {
+      timeIcon: {
+        pathFill: COLORS.textSubtle,
+      },
+      readByCount: {
+        color: COLORS.textSubtle,
+      },
+      checkAllIcon: {
+        pathFill: COLORS.primary,
+      },
+      checkIcon: {
+        pathFill: COLORS.textSubtle,
+      },
+    },
+  },
+  thread: {
+    newThread: {
+      backgroundGradientStart: COLORS.surfaceLight,
+      backgroundGradientStop: COLORS.surfaceLight,
+      text: {
+        color: COLORS.textMuted,
+      },
+    },
+  },
+  reply: {
+    container: {
+      backgroundColor: COLORS.surfaceDark,
+      borderColor: COLORS.border,
+    },
+    textContainer: {
+      backgroundColor: COLORS.surfaceDark,
+    },
+    markdownStyles: {
+      text: {
+        color: COLORS.textMuted,
+      },
+    },
+  },
+  typingIndicator: {
+    container: {
+      backgroundColor: COLORS.surfaceLight,
+    },
+    text: {
+      color: COLORS.textMuted,
+    },
+  },
+  poll: {
+    button: {
+      text: {
+        color: COLORS.primary,
+      },
+    },
+    message: {
+      container: {
+        backgroundColor: COLORS.incomingBubble,
+        borderRadius: 8,
+      },
+      header: {
+        title: {
+          color: COLORS.primary,
+        },
+        subtitle: {
+          color: COLORS.textMuted,
+        },
+      },
+      option: {
+        text: {
+          color: COLORS.text,
+        },
+        progressBar: {
+          backgroundColor: COLORS.border,
+        },
+        progressBarEmptyFill: COLORS.border,
+        progressBarVotedFill: COLORS.primary,
+        progressBarWinnerFill: COLORS.primaryLight,
+        voteButtonActive: COLORS.primary,
+        voteButtonInactive: COLORS.textMuted,
+      },
+    },
+  },
+};
