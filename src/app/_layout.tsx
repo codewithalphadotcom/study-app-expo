@@ -4,6 +4,7 @@ import { Stack } from "expo-router";
 import "../../global.css";
 
 import ChatWrapper from "@/components/ChatWrapper";
+import VideoProvider from "@/components/VideoProvider";
 import { AppProvider } from "@/contexts/AppProvider";
 import * as Sentry from "@sentry/react-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
@@ -38,12 +39,14 @@ export default function RootLayout() {
     <ClerkProvider tokenCache={tokenCache}>
       <GestureHandlerRootView className="flex-1">
         <ChatWrapper>
-          <AppProvider>
-            <Stack screenOptions={{ headerShown: false }}>
-              <Stack.Screen name="(auth)" />
-              <Stack.Screen name="(tabs)" />
-            </Stack>
-          </AppProvider>
+          <VideoProvider>
+            <AppProvider>
+              <Stack screenOptions={{ headerShown: false }}>
+                <Stack.Screen name="(auth)" />
+                <Stack.Screen name="(tabs)" />
+              </Stack>
+            </AppProvider>
+          </VideoProvider>
         </ChatWrapper>
       </GestureHandlerRootView>
     </ClerkProvider>

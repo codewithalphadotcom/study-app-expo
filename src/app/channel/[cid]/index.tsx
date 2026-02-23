@@ -69,7 +69,10 @@ const ChannelScreen = () => {
       headerRight: () => (
         <TouchableOpacity
           onPress={() => {
-            //  todo: implement video call functionality later
+            router.push({
+              pathname: "/call/[callId]",
+              params: { callId: channel?.id! },
+            });
           }}
         >
           <Ionicons name="videocam-outline" size={24} color={COLORS.primary} />
